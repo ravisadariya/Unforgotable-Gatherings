@@ -1,0 +1,290 @@
+/* NAVBAR-START */
+body {
+    margin: 0;
+    font-family: cursive;
+    padding: 0;
+}
+
+.navbar-div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px 15px rgb(43, 42, 42);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.logo {
+    width: 400px;
+    height: 90px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+    margin-left: 55px;
+    margin-top: 30px;
+    height: 30px;
+}
+
+#navbar-a1 {
+    margin-left: 160px;
+}
+
+a:hover {
+    color: #3381ff;
+}
+
+/* NAVBAR_END */
+
+
+header {
+    font-size: 50px;
+
+    margin-bottom: 40px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 60px;
+}
+
+.member-info {
+    display: block;
+}
+
+.member-info img {
+    align-items: left;
+    width: 200px;
+    height: 200px;
+}
+
+.member-info h2 {
+    align-items: right;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.member-info p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.team-member h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.event-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.event {
+    width: calc(30% - 20px);
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.event img {
+    max-width: 100%;
+    height: auto;
+}
+
+.event h3 {
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.event p {
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* FOOTER-START */
+.footer {
+    width: 100%;
+    background: #00121b;
+    display: block;
+}
+
+.inner-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-items {
+    color: #fff;
+}
+
+.footer-items-links {
+    margin-top: 20px;
+    width: 180px;
+}
+
+
+.footer-items-para {
+    width: 450px;
+    margin: 40px 100px 0px 0px;
+}
+
+.footer-items-contact {
+    margin-left: 95px;
+    margin-top: 20px;
+}
+
+
+.footer-items h3 {
+    margin-left: 20px;
+}
+
+#footer-h3 {
+    margin-left: 120px;
+}
+
+ul {
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+ul a {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+ul a:hover {
+    color: #279EFF;
+}
+
+footer ul li {
+    margin: 10px 0;
+    height: 25px;
+}
+
+.footer-bottom {
+    padding: 15px;
+    background: #00121b;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* FOOTER-END */
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-div {
+        display: block;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+    #navbar-a1 {
+        margin-left: 0;
+    }
+
+    header {
+        font-size: 36px;
+    }
+
+    .team-member {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .event-list {
+        flex-direction: column;
+    }
+
+    .event {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .inner-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-items {
+        margin: 20px 0;
+    }
+
+    .footer-items-links,
+    .footer-items-contact {
+        margin: 10px 0;
+    }
+
+    #footer-h3 {
+        margin-left: 80px;
+    }
+
+    .footer-items-para {
+        margin: 0;
+    }
+
+    .footer-items-para p {
+        margin: 20px 15px;
+    }
+
+    .footer-items-contact {
+        margin-left: 0;
+    }
+
+    .footer-bottom {
+        padding: 15px;
+    }
+}
